@@ -153,7 +153,6 @@ TW_H_OFFSET := -52
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
-PLATFORM_VERSION := 16.1.0
 VENDOR_SECURITY_PATCH := 2099-12-31
 
 # Debugging
@@ -170,3 +169,35 @@ TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
+
+## SHRP Device Specific Properties ##
+
+# Path of your SHRP Tree
+SHRP_PATH := device/realme/RMX1941
+
+# Maintainer name *
+SHRP_MAINTAINER := P-Salik
+
+# Device codename *
+SHRP_DEVICE_CODE := RMX1941
+
+# Recovery Type (It can be treble,normal,SAR) [Only for About Section] *
+SHRP_REC_TYPE := Treble
+
+# Recovery Type (It can be A/B or A_only) [Only for About Section] *
+SHRP_DEVICE_TYPE := A_only
+
+SHRP_EXPRESS := true
+SHRP_EDL_MODE := 0
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
+SHRP_NOTCH := true
+SHRP_DARK := true
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/class/leds/flashlight/brightness
+SHRP_FLASH_MAX_BRIGHTNESS := 2
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
