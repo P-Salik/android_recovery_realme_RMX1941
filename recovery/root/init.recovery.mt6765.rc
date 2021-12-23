@@ -13,7 +13,7 @@ service keystore_auth /system/bin/keystore_auth
     disabled
     seclabel u:r:recovery:s0
 
-service erase_para /sbin/dd if=/dev/zero of=/dev/block/bootdevice/by-name/para
+service erase_para /system/bin/dd if=/dev/null of=/dev/block/bootdevice/by-name/para
     user root
     group root
     disabled
