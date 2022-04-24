@@ -15,8 +15,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+# Extra VNDK Versions
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
+
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Specify phone tech before including full_phone
@@ -36,12 +40,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=RMX1941
 
 # HACK: Set vendor patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.security_patch=2099-12-31
-
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.bootimage.build.date.utc \
-    ro.build.date.utc
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.build.security_patch=2099-12-31 \
+    ro.bootimage.build.date.utc=0 \
+    ro.build.date.utc=0
 
 # Dimen
 TARGET_SCREEN_HEIGHT := 1560
