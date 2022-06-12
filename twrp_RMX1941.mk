@@ -16,6 +16,9 @@
 # limitations under the License.
 #
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Extra VNDK Versions
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
@@ -49,3 +52,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 TARGET_SCREEN_HEIGHT := 1560
 TARGET_SCREEN_WIDTH := 720
 TW_THEME := portrait_hdpi
+
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery
