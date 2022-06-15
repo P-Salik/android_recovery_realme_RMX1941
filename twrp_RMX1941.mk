@@ -16,6 +16,10 @@
 # limitations under the License.
 #
 
+# Dynamic Partition
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
 # Extra VNDK Versions
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
