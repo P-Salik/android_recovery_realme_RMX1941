@@ -1,7 +1,5 @@
-/system					ext4	/dev/block/platform/bootdevice/by-name/system			flags=wipeingui
-/system_image				emmc	/dev/block/platform/bootdevice/by-name/system
-/vendor					ext4	/dev/block/platform/bootdevice/by-name/vendor			flags=wipeingui
-/vendor_image				emmc	/dev/block/platform/bootdevice/by-name/vendor
+/system					ext4	system			flags=wipeingui
+/vendor					ext4	vendor			flags=wipeingui
 /data					ext4	/dev/block/platform/bootdevice/by-name/userdata			flags=fileencryption=aes-256-xts
 /vbmeta					emmc	/dev/block/platform/bootdevice/by-name/vbmeta			flags=flashimg=1
 /cache					ext4	/dev/block/platform/bootdevice/by-name/cache
