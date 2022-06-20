@@ -2,6 +2,9 @@
 /vendor					ext4	vendor								flags=display="Vendor";backup=1
 /system_image				emmc	/dev/block/platform/bootdevice/by-name/system			flags=display="System Image";backup=1;flashimg=1;wipeingui
 /vendor_image				emmc	/dev/block/platform/bootdevice/by-name/vendor			flags=display="Vendor Image";backup=1;flashimg=1;wipeingui
+/product                                ext4   product								flags=display="Product";backup=1
+/system_ext                             ext4   system_ext							flags=display="System Ext";backup=1
+/odm                                    ext4   odm								flags=display="ODM";backup=1
 
 /data					ext4	/dev/block/platform/bootdevice/by-name/userdata			flags=fileencryption=aes-256-xts
 /vbmeta					emmc	/dev/block/platform/bootdevice/by-name/vbmeta			flags=flashimg=1
