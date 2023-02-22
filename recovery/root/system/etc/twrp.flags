@@ -5,7 +5,7 @@
 /product                                ext4   product								flags=display="Product";backup=1
 /system_ext                             ext4   system_ext							flags=display="System Ext";backup=1
 /odm                                    ext4   odm								flags=display="ODM";backup=1
-/metadata                             ext4    /dev/block/platform/bootdevice/by-name/metadata                   flags=display="Metadata"
+/metadata                             	ext4    /dev/block/platform/bootdevice/by-name/metadata			flags=display="Metadata";wipeingui
 
 /data					ext4	/dev/block/platform/bootdevice/by-name/userdata			flags=fileencryption=aes-256-xts
 /data					f2fs	/dev/block/platform/bootdevice/by-name/userdata			flags=fileencryption=aes-256-xts
