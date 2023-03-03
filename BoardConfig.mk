@@ -165,12 +165,22 @@ RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_DEVICE_MODULES += \
     ashmemd_aidl_interface-cpp \
     libashmemd_client \
-    libresetprop
+    libkeymaster3device \
+    libkeymaster_messages \
+    libkeymaster_portable \
+    libpuresoftkeymasterdevice \
+    libresetprop \
+    libsoftkeymasterdevice
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/ashmemd_aidl_interface-cpp.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libashmemd_client.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libresetprop.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster3device.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster_messages.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster_portable.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libresetprop.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libsoftkeymasterdevice.so
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
