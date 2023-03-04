@@ -9,7 +9,7 @@
 /data					f2fs	/dev/block/platform/bootdevice/by-name/userdata			flags=fileencryption=aes-256-xts
 /vbmeta					emmc	/dev/block/platform/bootdevice/by-name/vbmeta			flags=flashimg=1
 /cache					ext4	/dev/block/platform/bootdevice/by-name/cache
-/persist				ext4	/dev/block/platform/bootdevice/by-name/persist			flags=backup=1;mounttodecrypt
+/mnt/vendor/persist			ext4	/dev/block/platform/bootdevice/by-name/persist			flags=backup=1;mounttodecrypt
 /proinfo				emmc	/dev/block/platform/bootdevice/by-name/proinfo			flags=display="proinfo";backup=1
 /nvdata					ext4	/dev/block/platform/bootdevice/by-name/nvdata			flags=display="nvdata";backup=1
 /nvram					emmc	/dev/block/platform/bootdevice/by-name/nvram			flags=display="nvram";backup=1
